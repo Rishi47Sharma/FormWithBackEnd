@@ -1,5 +1,8 @@
 # FormConnectedBackEnd
  Design a simple form and connect it to the backend database 
+ 
+ ## Tech Stack
+ Reactjs, Nodejs, Axios, Expressjs, Mongoose, tailwindCss
 
 
 ## Form UI
