@@ -20,8 +20,14 @@ app.use(
 const PORT =4000;
 
 app.post('/api/register',async(req,res)=>{
-    const{username,email,number,address}=req.body;
+    
+      try {
+        const{username,email,number,address}=req.body;
      await User.create({username,email,number,address})
+     res.send();
+      } catch (error) {
+        
+      }
 
     
 
