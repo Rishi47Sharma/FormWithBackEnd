@@ -1,18 +1,18 @@
 import { useState } from "react";
 import axios from 'axios'
 
-
+ axios.defaults.baseURL=import.meta.env.VITE_API_BASE_URL;
 function App() {
 
   const [username ,setUserName] = useState('');
     const [email , setEmail]= useState('');
     const [number ,setNumber] = useState('');
     const [address , setAddress]= useState('');
-    axios.defaults.baseURL='http://localhost:4000';
+    
   async function handleSubmit(ev){
       ev.preventDefault();
       console.log('hey')
-         console.log(`name:${username} , email:${email} ,nmuber:${number},address:${address} `)
+       
          await axios.post('/register',{username,email,number,address})
     }
   
