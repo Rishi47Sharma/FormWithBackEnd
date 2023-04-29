@@ -13,7 +13,7 @@ function App() {
       ev.preventDefault();
       console.log('hey')
        
-         await axios.post('/register',{username,email,number,address})
+         await axios.post('/api/register',{username,email,number,address})
     }
   
 
