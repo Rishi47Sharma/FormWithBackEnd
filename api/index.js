@@ -26,7 +26,7 @@ app.post('/api/register',async(req,res)=>{
      await User.create({username,email,number,address})
      res.send();
       } catch (error) {
-        
+        res.send();
       }
 
     
