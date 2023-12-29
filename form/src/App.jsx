@@ -21,7 +21,7 @@ function App() {
 
     try {
       // If validations pass, you can proceed with the form submission
-      const response = await axios.post("/api/register", {
+      const response = await axios.post("/register", {
         username,
         email,
         number,
