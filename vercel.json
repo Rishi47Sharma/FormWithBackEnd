@@ -1,12 +1,11 @@
 {
-    "buildCommand":"cd form && yarn install && ./node_modules/vite/bin/vite.js build",
-    "outputDirectory":"form/dist",
-    "framework":"vite",
-    "rewrites":[
-        {
-            "source":"/api/(.*)",
-            "destination":"/api/index.js"
-        }
-    ]
-
+  "buildCommand": "cd form && yarn install && ./node_modules/vite/bin/vite.js build",
+  "outputDirectory": "form/dist",
+  "framework": "vite",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/api/index.js"
+    }
+  ]
 }
