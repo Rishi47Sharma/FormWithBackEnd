@@ -21,7 +21,7 @@ app.get("/", (req, res) => {
   res.send("hello world");
 });
 
-app.post("/api/register", async (req, res) => {
+app.post("/register", async (req, res) => {
   try {
     const { username, email, number, address } = req.body;
 
